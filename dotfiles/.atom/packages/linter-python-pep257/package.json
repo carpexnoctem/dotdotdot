@@ -1,0 +1,69 @@
+{
+  "name": "linter-python-pep257",
+  "main": "./lib/main",
+  "version": "0.0.1",
+  "description": "Linter for Python docstrings.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfodje/linter-python-pep256.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.50.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^1.0.0"
+  },
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/sfodje/linter-python-pep256/issues"
+  },
+  "homepage": "https://github.com/sfodje/linter-python-pep256/issues",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "xregexp",
+        "version": "3.0.0",
+        "path": "node_modules/atom-linter/node_modules/xregexp/xregexp-all.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/main.coffee",
+        "node_modules/atom-linter/lib/helpers.coffee"
+      ],
+      ".json": [
+        "node_modules/atom-linter/node_modules/xregexp/package.json",
+        "node_modules/atom-linter/package.json",
+        "package.json"
+      ],
+      ".js": [
+        "node_modules/atom-linter/node_modules/xregexp/xregexp-all.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "atom-linter": "^1.0.0"
+        }
+      }
+    ]
+  },
+  "readme": "linter-python-pep257\n=============\n\nA [Linter][] plugin to lint Python docstrings according to the semantics and conventions spec'd in [pep257][spec].\nThis is a fork of https://github.com/AtomLinter/linter-pep257 but rewritten to support the Atom-linter's new API.\n\nIn use side-by-side with the flake8 linter:\n\n![Screenshot of pep257 feedback](https://github.com/sfodje/linter-python-pep256/blob/master/screenshot.png?raw=true)\n\n## Installation\n\n1. If Linter is not already installed, follow the [linter installation instructions][linter-install].\n\n1. Configure linter to show \"info\" messages:\n\n  * Open the config for Linter.\n  * Check option \"Show Info Messages\".\n\n1. Install python package [pep257][].\n\n  Execute in a terminal:\n  ```\n  pip install pep257\n  ```\n\n1. Install plugin.\n\n  Execute:\n  ```\n  apm install linter-python-pep257\n  ```\n\n## Configuration\n\nsetting | values\n--- | ---\nError codes to ignore (comma separated) | Example: `D100,D101` - [all available error codes][pep257 codes]\nPath to executable pep257 cmd | Default: pep257\n\nIf using python version management, like [pyenv][], the path configuration will need to be set.  For pyenv, the path for pep257 is discoverable by executing:\n```\npyenv which pep257\n```\n\n\n[Linter]: https://github.com/AtomLinter/Linter\n[linter-install]: https://github.com/AtomLinter/Linter#installation\n[pep257]: https://pypi.python.org/pypi/pep257\n[pep257 codes]:https://github.com/GreenSteam/pep257/#error-codes\n[pyenv]: https://github.com/yyuu/pyenv\n[spec]: http://legacy.python.org/dev/peps/pep-0257/\n",
+  "_id": "linter-python-pep257@0.0.1",
+  "_shasum": "d0bd9b8d4806c330f19f1d88587a875297a731f9",
+  "_resolved": "file:../d-115822-2471-1z11c9x/package.tgz",
+  "_from": "../d-115822-2471-1z11c9x/package.tgz"
+}

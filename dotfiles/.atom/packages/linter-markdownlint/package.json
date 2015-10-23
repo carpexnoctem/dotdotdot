@@ -1,0 +1,52 @@
+{
+  "name": "linter-markdownlint",
+  "activationCommands": {},
+  "main": "./lib/init",
+  "version": "1.0.1",
+  "description": "Lint Markdown with mdl",
+  "keywords": [
+    "linter",
+    "mdl",
+    "markdown",
+    "markdownlint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lloeki/linter-markdownlint.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "linter-markdownlint\n=========================\n\nThis linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides an interface to [markdownlint](https://github.com/mivok/markdownlint). It will be used with files that have the “Markdown” syntax.\n\n## Installation\nLinter package must be installed in order to use this plugin. If Linter is not installed, please follow the instructions [here](https://github.com/AtomLinter/Linter).\n\n### mdl installation\nBefore using this plugin, you must ensure that `mdl` is installed on your system. To install `mdl`, do the following:\n\n1. Install [ruby](https://www.ruby-lang.org/).\n\n2. Install [markdownlint](https://github.com/mivok/markdownlint) by typing the following in a terminal:\n   ```\n   gem install mdl\n   ```\n\nNow you can proceed to install the linter-markdownlint plugin.\n\n### Plugin installation\n```\n$ apm install linter-markdownlint\n```\n\n## Settings\nYou can configure linter-markdownlint by editing ~/.atom/config.cson (choose Open Your Config in Atom menu):\n\n```\n'linter-markdownlint':\n  'executableDir': null # markdownlint directory path.\n  'binaryName': mdl # mdl binary name.\n```\nRun `which mdl` to find the path,\nif you using rbenv run `rbenv which mdl`\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/lloeki/linter-markdownlint/issues"
+  },
+  "homepage": "https://github.com/lloeki/linter-markdownlint#readme",
+  "_id": "linter-markdownlint@1.0.1",
+  "_shasum": "efaf9d1fdde2b61e0691e44e15d7ee124f6400e8",
+  "_resolved": "file:../d-115822-2501-1aj60nf/package.tgz",
+  "_from": "../d-115822-2501-1aj60nf/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/init.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
